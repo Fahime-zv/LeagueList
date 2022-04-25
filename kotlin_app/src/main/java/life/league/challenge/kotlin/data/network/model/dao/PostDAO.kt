@@ -1,0 +1,10 @@
+package life.league.challenge.kotlin.data.network.model.dao
+
+import com.google.gson.annotations.SerializedName
+
+data class PostDAO(
+    @SerializedName("userId") val userId: Int,
+    @SerializedName("id") val id: Int,
+    @SerializedName("title") val title: String,
+    @SerializedName("body") val body: String
+)

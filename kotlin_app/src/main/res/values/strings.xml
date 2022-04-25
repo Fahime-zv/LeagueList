@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mobile Coding Challenge</string>
+    <string name="welcome">Welcome To Code Challenge</string>
+    <string name="anErrorOccurred">"An error occurred while processing the request."</string>
+</resources>
