@@ -8,14 +8,14 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class UserDAO(
     @SerializedName("id") val id: Int,
-    @SerializedName("avatar") val avatar: AvatarDAO,
+    @SerializedName("avatar") val avatar: String,
     @SerializedName("name") val name: String,
     @SerializedName("username") val userName: String,
     @SerializedName("email") val email: String,
     @SerializedName("address") val address: AddressDAO,
     @SerializedName("phone") val phone: String,
     @SerializedName("website") val website: String,
-    @SerializedName("company") val company: CompanyDAO
+    @SerializedName("company") val company: CompanyDAO,
 ) : Parcelable {
 
     @Parcelize

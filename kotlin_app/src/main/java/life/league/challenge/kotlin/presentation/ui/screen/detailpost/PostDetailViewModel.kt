@@ -13,7 +13,6 @@ class PostDetailViewModel(private val post: Post) :
     fun getUserLiveData(): LiveData<UserDAO> = postLiveData
 
     init {
-
         postLiveData.postValue(post.user)
     }
 

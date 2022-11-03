@@ -70,7 +70,7 @@ class PostAdapter(
         fun bind(context: Context, position: Int) {
             imageView.setBackgroundColor(ContextCompat.getColor(context, R.color.defaultColor))
             ImageLoaderUtils.with(context).placeholder(R.drawable.noimage)
-                .load(list[position].user.avatar.thumbnail)
+                .load(list[position].user.avatar)
                 .into(imageView)
 
             titleTextView.text = list[position].title

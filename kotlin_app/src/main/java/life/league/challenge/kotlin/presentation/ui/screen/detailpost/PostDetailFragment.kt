@@ -45,7 +45,7 @@ class PostDetailFragment : BaseFragmentVM<PostDetailViewModel>() {
 
         viewModel.getUserLiveData().observe(viewLifecycleOwner) {
             ImageLoaderUtils.with(requireContext()).placeholder(R.drawable.noimage)
-                .load(args.post.user.avatar.large)
+                .load(args.post.user.avatar)
                 .into(avatarImageView)
             infoTextView.text =
                 " Name: ${args.post.user.name} Email: ${args.post.user.email}  Phone${args.post.user.phone}"
